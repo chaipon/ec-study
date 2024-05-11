@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>fn1のTOP画面</title>
+        <link rel="stylesheet" href="{{ url_for('fn1.static', filename='style.css')}}" />
+    </head>
+</html>
+
+<body>
+    <p class="fn1">fn1アプリケーション {{param1}}</p>
+    <div>
+        <button id="minus">-</button>
+        <span id="number">0</span>
+        <button id="plus">+</button>
+    </div>
+    <div>
+        --------------------------------------
+    </div>
+    <div>
+        <button id="alert">アラート表示</button>
+        <button id="logout">ログ出力</button>
+        <button id="color">背景色</button>
+    </div>
+
+    
+    <script src="{{ url_for('fn1.static', filename='script.js' )}}"></script>
+</body>
