@@ -7,7 +7,7 @@ def create_app():
     # Flaskインスタンス作成
     app = Flask(__name__)
     # fn1パッケージからviewsをimportする
-    from apps.fn1 import views as fn1_views
+    from study.fn1 import views as fn1_views
 
     # SECRET_KEYを追加する
     app.config["SECRET_KEY"] = "12345678"
