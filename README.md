@@ -28,6 +28,6 @@ Flask sample program for studying web system
     > . .venv\bin\activate
     > pip install ../study-1.0.0-py2.py3-none-any.whl
     > pip install waitress
-    > waitress-server --call 'study:create_app'
+    > waitress-server  --listen=192.168.10.10:5000 --call 'study:create_app'
 
 
